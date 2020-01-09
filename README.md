@@ -7,7 +7,7 @@ This repository is a Django app of the pattern recognition card game [SET](https
 * Python 3
 * Django 3
 
-### Setup
+## Setup
 * Create a new Django project if you don't already have one.
 * In your project directory, create a new directory called `setgame`.
 * Clone this repo to the newly created directory.
