@@ -1,0 +1,4 @@
+{% load static %}
+{% for card in cards %}
+  <img class="set-card" data-dict="{'number':'{{ card.number }}','color':'{{ card.color }}','shading':'{{ card.shading }}','shape':'{{ card.shape }}'}" src="{% static 'setgame/images/' %}{{ card }}.png" alt="">
+{% endfor %}

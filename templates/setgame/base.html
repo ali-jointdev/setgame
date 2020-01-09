@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'setgame/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'setgame/css/custom.css' %}" />
+  <link rel="shortcut icon" type="image/png" href="{% static 'setgame/images/favicon.png' %}"/>
+  <title>SET Game</title>
+</head>
+<body>
+  <div class="container">
+    <h1 >SET GAME</h1>
+
+    <p> Find a "set" in the cards below. A "set" consists of three cards satisfying all of these conditions:</p>
+    <ol>
+      <li>They all have the same number or have three different numbers.</li>
+      <li>They all have the same shape or have three different shapes.</li>
+      <li>They all have the same shading or have three different shadings.</li>
+      <li>They all have the same color or have three different colors.</li>
+    </ol>
+
+    <div class="text-center">
+      <button type="button" class="btn btn-primary">Deal New Cards</button>
+      <div class="cards-table row mt-3">
+        {% include 'setgame/cards.html' %}
+      </div>
+      <h4></h4>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="{% static 'setgame/js/bootstrap.bundle.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'setgame/js/jquery-3.4.1.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'setgame/js/setgame.js' %}"></script>
+</body>
+</html>
